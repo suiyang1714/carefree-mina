@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="result">
+    <view class='result--logo'><image src='http://p3ctoqg27.bkt.clouddn.com/true.png'></image></view>
+    <view class="result--txt">投递成功，无忧会在三天内给您回信哦~</view>
+    <view class="result--txt">生活虐我千百遍，我带生活如初恋</view>
+  </view>
+  <view class='qrCode'>
+    <view class='qrCode--title'></view>
+    <view class='qrCode--txt'>长按识别二维码，关注后等待无忧的回信哦~</view>
+    <view class='qrCode--img'><image src='http://p3ctoqg27.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180205193015.jpg'></image></view>
+  </view>
+</view>

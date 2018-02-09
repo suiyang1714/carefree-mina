@@ -1,0 +1,85 @@
+/**app.wxss* */
+page {
+  min-height: 100%;
+  display: flex; }
+
+.container {
+  flex: 1;
+  overflow: hidden;
+  background-color: #797cba;
+  min-height: 100%;
+  padding: 0 4%; }
+
+.container__top {
+  padding-top: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+
+.container__top--header {
+  background: url(http://p3ctoqg27.bkt.clouddn.com/header--top.png) no-repeat;
+  background-size: 100% 100%;
+  width: 90%;
+  height: 20px;
+  margin: 0 auto; }
+
+.container__top--input {
+  height: 410px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #fff;
+  position: relative; }
+
+.container__middle {
+  text-align: center; }
+
+.container__bottom {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.container__bottom button {
+  width: 117px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px; }
+
+.reply--tips {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.reply--txt {
+  font-size: 14px;
+  line-height: 20px; }
+
+.container__middle .txt {
+  font-size: 16px;
+  color: #fff;
+  line-height: 50px;
+  height: 50px;
+  text-align: center; }
+
+.reward {
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.reward .reward--txt {
+  color: #fff;
+  font-size: 14px; }
+
+.reward .reward--btn {
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #fff;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  border-radius: 34px;
+  background-color: #ff8181;
+  font-size: 14px; }

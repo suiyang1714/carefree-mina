@@ -1,0 +1,29 @@
+ <view class="container">
+   <view class="container__top">
+    <view class="container__top--header"></view>
+    <view class="container__top--input">
+     <view class="textarea-placeholder" wx:if="{{ showHide }}">
+      写下您的无忧信，无忧看到会及时回复您~
+     </view>
+     <textarea class="textarea" placeholder="" bindinput="placeholderHide"></textarea>
+    </view>
+   </view>
+   <view class="container__middle">
+    <view class="display--flex">
+     <view class="flex">
+      无忧信的源头
+     </view>
+     <picker class="flex" bindchange="bindPickerChange" value="{{selectIndex}}" range="{{select}}">
+      <view class="picker">
+       {{select[selectIndex]}}
+      </view>
+     </picker>
+    </view>
+    <text class="submit--tips">
+      {{ submitTips }}
+    </text>
+   </view>
+   <view class="container__bottom">
+    <button bindtap="commitFc">投信喽</button>
+   </view>
+  </view>

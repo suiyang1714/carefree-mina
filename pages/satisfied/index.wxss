@@ -1,0 +1,39 @@
+page{
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.result, .reward {
+  flex: 1;
+}
+.result--logo{
+  padding: 10% 0; 
+  
+}
+.result--logo image{
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  display: block;
+}
+.result--txt{
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+}
+.reward--img image{
+  width: 67px;
+  height: 67px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.reward--txt{
+  font-size: 14px;
+  line-height: 46px;
+  color: #ff5959;
+  text-align: center;
+}

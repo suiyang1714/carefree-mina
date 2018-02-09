@@ -1,0 +1,33 @@
+ <view class="container">
+   <view class="container__top">
+    <view class="container__top--header"></view>
+    <view class="container__top--input">
+     <view class="reply--tips">
+      无忧给您的回信，请您认真阅读
+     </view>
+     <view class="reply--txt">
+      {{ reply }}
+     </view>
+    </view>
+   </view>
+   <view class="container__middle">
+    <view class="txt">
+     你对无忧的回信是否满意
+    </view>
+    <text class="submit--tips">
+      {{ submitTips }}
+    </text>
+   </view>
+   <view class="container__bottom">
+    <button bindtap="satisfied">满意</button>
+    <button bindtap="unsatisfied">不满意</button>
+   </view>
+   <view class="reward">
+    <view class="reward--txt">
+      如果您觉得无忧还不错的话，记得打赏无忧哦~
+    </view>
+    <view class="reward--btn">
+      打赏
+    </view>
+   </view>
+  </view>

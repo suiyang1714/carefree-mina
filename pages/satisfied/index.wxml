@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="result">
+    <view class='result--logo'><image src='http://p3ctoqg27.bkt.clouddn.com/%E7%AC%91%E8%84%B8@2x.png'></image></view>
+    <view class="result--txt">无忧祝您生活愉快，烦恼少少哦</view>
+    <view class="result--txt">如果您觉得无忧不错，打赏感谢无忧哦</view>
+  </view>
+  <view class='reward'>
+    <view class='reward--img'><image src='http://p3ctoqg27.bkt.clouddn.com/good@2x.png'></image></view>
+    <view class='reward--txt'>打赏</view>
+  </view>
+</view>

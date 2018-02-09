@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/unsatisfied/index",
+    "pages/satisfied/index",
+    "pages/reply/index",
+    "pages/send/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "无忧",
+    "navigationBarTextStyle":"black"
+  }
+}

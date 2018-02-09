@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="result">
+    <view class="result--txt">无忧期待您的回信，已做好为您回信的准备了哟~</view>
+    <view class="result--btn">
+      <button bindtap='continueEmail'>继续回信</button>
+    </view>
+  </view>
+</view>
