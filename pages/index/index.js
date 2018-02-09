@@ -40,12 +40,11 @@ Page({
       })
     } else if (this.data.textarea !== '' && this.data.selectIndex !== 0) {
       wx.request({
-        url: 'http://localhost:3000/mina/savelMsg',
+        url: 'http://localhost:3000/mina/poseProblem',
         data: {
-          emailMsg: this.data.textarea,
-          emailType: this.data.select[this.data.selectIndex],
-          openid: app.globalData.userInfo.openid,
-          nickname: app.globalData.userInfo.nickname
+          problem: this.data.textarea,
+          problemType: this.data.select[this.data.selectIndex],
+          openid: app.globalData.userInfo.openid
         },
         success: (res) => {
           console.log(res)
