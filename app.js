@@ -5,7 +5,6 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: resLogin => {
@@ -41,6 +40,7 @@ App({
                     },
                     success: (res) => {
                       this.globalData.userInfo = res.data.data
+                      isReply()
                       console.log(this.globalData.userInfo)
                     }
                   })
@@ -58,6 +58,23 @@ App({
         })
       }
     })
+
+    // 请求是否有回信
+    const isReply = ()=>{
+      wx.request({
+        url: 'http://localhost:3000/mina/isReply',
+        data: {
+          _id: this.globalData.userInfo._id
+        },
+        success: (res) => {
+          if (res.data.success == true) {
+            wx.navigateTo({
+              url: "../reply/index",
+            })
+          }
+        }
+      })
+    }
   },
   globalData: {
     userInfo: null
