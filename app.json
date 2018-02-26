@@ -5,7 +5,8 @@
     "pages/satisfied/index",
     "pages/reply/index",
     "pages/send/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/playtour/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -4,7 +4,7 @@
     <view class="result--txt">无忧祝您生活愉快，烦恼少少哦</view>
     <view class="result--txt">如果您觉得无忧不错，打赏感谢无忧哦</view>
   </view>
-  <view class='reward'>
+  <view class='reward' bindtap='playTour'>
     <view class='reward--img'><image src='http://p3ctoqg27.bkt.clouddn.com/good@2x.png'></image></view>
     <view class='reward--txt'>打赏</view>
   </view>

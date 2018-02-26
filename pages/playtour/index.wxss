@@ -1,0 +1,25 @@
+.container .logo{
+  margin: 50rpx auto;
+  width: 158rpx;
+}
+.container .logo image{
+  width: 158rpx;
+  height: 158rpx;
+}
+.container .logo text{
+  font-size: 36rpx;
+}
+.total_fee__box .total_fee{
+  float: left;
+  width: 200rpx;
+  height: 104rpx;
+  color: #ea5656;
+  line-height: 104rpx;
+  text-align: center;
+  border: 4rpx solid #ea5656;
+  margin: 10rpx 20rpx;
+}
+.total_fee__box .total_fee.select{
+  background-color: #ea5656;
+  color: #fff;
+}

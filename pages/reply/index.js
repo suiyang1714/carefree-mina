@@ -53,4 +53,9 @@ Page({
       }
     })
   },
+  playTour: function () {
+    wx.navigateTo({
+      url: '../playtour/index'
+    })
+  }
 })

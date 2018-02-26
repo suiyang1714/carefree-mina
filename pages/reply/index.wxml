@@ -26,7 +26,7 @@
     <view class="reward--txt">
       如果您觉得无忧还不错的话，记得打赏无忧哦~
     </view>
-    <view class="reward--btn">
+    <view class="reward--btn" bindtap='playTour'>
       打赏
     </view>
    </view>

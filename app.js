@@ -32,7 +32,7 @@ App({
                 success: resUser => {
                   // // 可以将 res 发送给后台解码出 unionId
                   wx.request({
-                    url: 'http://localhost:3000/mina/user',
+                    url: this.globalData.serverUrl +'/mina/user',
                     data: {
                       encryptedData: resUser.encryptedData,
                       code: resLogin.code,
@@ -62,7 +62,7 @@ App({
     // 请求是否有回信
     const isReply = ()=>{
       wx.request({
-        url: 'http://localhost:3000/mina/isReply',
+        url: this.globalData.serverUrl + '/mina/isReply',
         data: {
           _id: this.globalData.userInfo._id
         },
@@ -77,6 +77,7 @@ App({
     }
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    serverUrl: 'http://127.0.0.1:3000'
   },
 })
