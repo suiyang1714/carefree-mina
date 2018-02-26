@@ -1,14 +1,13 @@
 const app = getApp()
 Page({
   data: {
-    reply: 'Hello World',
+    reply: '',
     _id: '',
+    reply_id: '',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    showHide: true,
-    areaIndex: 0,
-    area: ['北京', '广州', '上海', '深圳']
+    showHide: true
   },
   onShow: function () {
     wx.request({
@@ -17,9 +16,11 @@ Page({
         _id: app.globalData.userInfo._id
       },
       success: (res) => {
+        console.log(res.data.data)
         this.setData({
-          reply: res.data.data[0].reply.reply,
-          _id: res.data.data[0]._id
+          reply: res.data.data.reply.reply,
+          _id: res.data.data._id,
+          reply_id: res.data.data.reply._id
         })
       }
     })
@@ -30,6 +31,7 @@ Page({
       url: 'http://localhost:3000/mina/isSatisfied',
       data: {
         _id: this.data._id,
+        reply_id: this.data.reply_id,
         satisfaction: true
       },
       success: res => {
@@ -44,6 +46,7 @@ Page({
       url: 'http://localhost:3000/mina/isSatisfied',
       data: {
         _id: this.data._id,
+        reply_id: this.data.reply_id,
         satisfaction: false
       },
       success: res => {
